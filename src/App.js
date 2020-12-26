@@ -7,14 +7,14 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <div className="App">
-      <Navigation />
-
+      <Navigation />{" "}
+      <div className="banner__title animate__animated animate__lightSpeedInRight">
+        <h1>Extreme Transportation ..</h1>
+        <button>Get in touch</button>
+      </div>
       <video autoPlay muted loop>
         <source src={motorway} type="video/mp4" />
       </video>
-      <div className="banner__title animate__animated animate__lightSpeedInRight">
-        <h1>Extreme Transportation ..</h1>
-      </div>
       {/* <button className="button__header">Contact Us</button> */}
       <section className="section__one ">
         <div className="section__one-title">
@@ -50,6 +50,13 @@ function App() {
           </p>
         </div>
       </section>
+      <section className="section__four">
+        <h4 className="section__four-questions">
+          Got Any Questions? Need help?
+        </h4>
+        <p>We are here to help. Get in touch!</p>
+      </section>
+      <Footer />
     </div>
   );
 }
