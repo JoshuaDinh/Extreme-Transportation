@@ -1,6 +1,6 @@
 import "./App.css";
-import motorway from "./Images/motorway2.mp4";
 import section2 from "./Images/3.jpeg";
+import phone from "./Images/phone.svg";
 import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
 
@@ -8,13 +8,20 @@ function App() {
   return (
     <div className="App">
       <Navigation />{" "}
-      <div className="banner__title animate__animated animate__lightSpeedInRight">
-        <h1>Extreme Transportation ..</h1>
-        <button>Get in touch</button>
+      <div className="banner__title ">
+        <h1 className="animate__animated animate__lightSpeedInRight">
+          Extreme Transportation{" "}
+        </h1>
+        <div className="banner__wings-large animate__animated animate__lightSpeedInRight"></div>
+        <div className="banner__wings-medium animate__animated animate__lightSpeedInRight"></div>
+        <div className="banner__wings-small animate__animated animate__lightSpeedInRight"></div>
+        <button className="animate__animated animate__lightSpeedInRight">
+          Get in touch
+        </button>
       </div>
-      <video autoPlay muted loop>
+      {/* <video autoPlay muted loop>
         <source src={motorway} type="video/mp4" />
-      </video>
+      </video> */}
       {/* <button className="button__header">Contact Us</button> */}
       <section className="section__one ">
         <div className="section__one-title">
@@ -51,10 +58,15 @@ function App() {
         </div>
       </section>
       <section className="section__four">
-        <h4 className="section__four-questions">
-          Got Any Questions? Need help?
-        </h4>
-        <p>We are here to help. Get in touch!</p>
+        <div className="section__four-title">
+          <h4 className="section__four-questions">
+            Got Any Questions? Need help?
+          </h4>
+          <p>We are here to help. Get in touch!</p>
+        </div>
+        <div className="section__four-img">
+          <img src={phone} alt="phone" />
+        </div>
       </section>
       <Footer />
     </div>

@@ -9,47 +9,63 @@
   width: 100%;
 }
 
-video {
-  height: 92vh;
-  width: 100%;
-  object-fit: cover;
-  -webkit-box-shadow: 0px 12px 15px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 12px 15px 3px rgba(0, 0, 0, 0.75);
-}
 .banner__title {
   color: white;
-  font-size: 32px;
+  font-size: 42px;
   letter-spacing: 3.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 96vh;
+  background: linear-gradient(rgba(0, 45, 114, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Images/truck.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.banner__wings-large {
+  width: 160px;
+  height: 4px;
+  background-color: white;
   position: absolute;
+  right: 4%;
+  top: 36%;
+  animation-delay: 1s;
+}
+.banner__wings-medium {
+  width: 120px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  right: 6.5%;
+  top: 38%;
+  animation-delay: 1s;
+}
+.banner__wings-small {
+  width: 80px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  right: 9%;
   top: 40%;
-  right: 20%;
-  -webkit-text-stroke-width: 1px;
+  animation-delay: 1s;
+}
+
+.banner__title > h1 {
+  animation-delay: 1s;
+}
+.banner__title > button {
+  animation-delay: 1.5s;
 }
 
 .banner__title > button {
-  color: #002d72;
+  color: #39393a;
   padding: 10px;
   height: 65px;
   width: 200px;
   margin-top: 7%;
   font-size: 22px;
-}
-
-.button__header {
-  background: white;
-  color: #002d72;
-  border: 1px solid #002d72;
-  height: 3.5em;
-  width: 11em;
-  border-radius: 35px;
-  font-size: 24px;
-  position: fixed;
-  right: 0;
-  top: 4%;
+  cursor: pointer;
 }
 
 /*  Section 1 */
@@ -166,21 +182,21 @@ video {
 /* Section 4 */
 
 .section__four {
-  height: 200px;
+  height: 100%;
   margin: 7% 0;
   display: grid;
   align-items: center;
   justify-content: center;
 }
 
-.section__four > p {
+.section__four-title > p {
   color: #002d72;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  padding: 10px 15px;
   font-weight: 600;
+  margin-top: 7%;
 }
 
 .section__four-questions {
@@ -193,6 +209,19 @@ video {
   align-items: center;
   justify-content: center;
   letter-spacing: 2.5px;
+}
+
+.section__four-title {
+  width: 100%;
+}
+.section__four-img {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.section__four-img > img {
+  width: 350px;
 }
 
 /* media quieries */
