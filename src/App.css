@@ -25,12 +25,10 @@
 .banner__title > h1 {
   animation-delay: 1s;
   margin-bottom: 2%;
+  animation-duration: 2.5s;
 }
 .banner__title > p {
   font-size: 1.2rem;
-}
-.banner__title > button {
-  animation-delay: 1.5s;
 }
 
 .banner__title > button {
@@ -224,7 +222,7 @@
 }
 .section__three-title > p > span {
   font-weight: 700;
-  font-size: 1.5remrem;
+  font-size: 1.5rem;
 }
 
 /* Section 4 */
@@ -303,6 +301,13 @@
   }
   .section__two-title > h1 {
     font-size: 52px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sub__headline-box {
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+    color: #002d72;
   }
 }
 
