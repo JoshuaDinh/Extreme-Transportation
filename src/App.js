@@ -1,29 +1,53 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import section2 from "./Images/3.jpeg";
 import phone from "./Images/phone.svg";
+import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
+import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
 
-function App() {
+const App = () => {
+  const [contact, setContact] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 900) {
+        setContact(true);
+      } else setContact(false);
+    });
+    // return () => {
+    //   window.removeEventListener("scroll");
+    // };
+  }, []);
   return (
     <div className="App">
       <Navigation />{" "}
       <div className="banner__title ">
         <h1 className="animate__animated animate__lightSpeedInRight">
-          Extreme Transportation{" "}
+          Auto Transport & Car Shipping
         </h1>
-        <div className="banner__wings-large animate__animated animate__lightSpeedInRight"></div>
-        <div className="banner__wings-medium animate__animated animate__lightSpeedInRight"></div>
-        <div className="banner__wings-small animate__animated animate__lightSpeedInRight"></div>
-        <button className="animate__animated animate__lightSpeedInRight">
-          Get in touch
-        </button>
+        <p>
+          Get Car Shipping Quote • Best Rated Vehicle Transport Company •
+          Nationwide
+        </p>
       </div>
-      {/* <video autoPlay muted loop>
-        <source src={motorway} type="video/mp4" />
-      </video> */}
-      {/* <button className="button__header">Contact Us</button> */}
-      <section className="section__one ">
+      <div className="sub__headline-container">
+        <h3>Auto Transport you can trust</h3>
+        <p>Transporting your vehicle safely is our top priority</p>
+        <div className="sub__headline-box">
+          <span>
+            Get a Quote <FormatQuoteIcon />
+          </span>
+          <span>
+            <LocalOfferIcon fontSize="large" />
+          </span>
+        </div>
+      </div>
+      {contact && (
+        <button className="scrolled__contact-button">Need help?</button>
+      )}{" "}
+      <section className="section__one">
         <div className="section__one-title">
           <h1>About Us</h1>
           <p>
@@ -50,10 +74,11 @@ function App() {
         <div className="section__three-title">
           <h1>Core values</h1>
           <p>
-            These values define company. We will apply these values to our
-            everyday decisions, actions, and activities. Our Reputation is of
-            vital importance to us. We take ourselves and our mission seriously.
-            “
+            <span> Quality, Loyalty, Integrity, Honor</span>, and
+            <span> Service</span>... Our values define our company. We will
+            apply these values to our everyday decisions, actions, and
+            activities. Our Reputation is of vital importance to us. We take
+            ourselves and our mission seriously. “
           </p>
         </div>
       </section>
@@ -71,6 +96,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

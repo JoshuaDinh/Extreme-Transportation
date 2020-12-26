@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .App {
   height: 100%;
@@ -11,48 +10,24 @@
 
 .banner__title {
   color: white;
-  font-size: 42px;
+  font-size: 2rem;
   letter-spacing: 3.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 96vh;
-  background: linear-gradient(rgba(0, 45, 114, 0.5), rgba(0, 0, 0, 0.5)),
+  height: 93vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("./Images/truck.jpg") center no-repeat;
   background-size: cover;
 }
 
-.banner__wings-large {
-  width: 160px;
-  height: 4px;
-  background-color: white;
-  position: absolute;
-  right: 4%;
-  top: 36%;
-  animation-delay: 1s;
-}
-.banner__wings-medium {
-  width: 120px;
-  height: 4px;
-  background-color: white;
-  position: absolute;
-  right: 6.5%;
-  top: 38%;
-  animation-delay: 1s;
-}
-.banner__wings-small {
-  width: 80px;
-  height: 4px;
-  background-color: white;
-  position: absolute;
-  right: 9%;
-  top: 40%;
-  animation-delay: 1s;
-}
-
 .banner__title > h1 {
   animation-delay: 1s;
+  margin-bottom: 2%;
+}
+.banner__title > p {
+  font-size: 1.2rem;
 }
 .banner__title > button {
   animation-delay: 1.5s;
@@ -66,6 +41,75 @@
   margin-top: 7%;
   font-size: 22px;
   cursor: pointer;
+}
+
+/* Subheadline */
+
+.sub__headline-container {
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub__headline-container > h3 {
+  color: #39393a;
+  font-size: 2.5rem;
+}
+.sub__headline-container::after {
+  content: "";
+  width: 0.3rem;
+  height: 3em;
+  background-color: grey;
+  transform: rotate(90deg);
+  position: absolute;
+}
+.sub__headline-container > p {
+  color: #39393a;
+  font-size: 1.2rem;
+  margin-top: 2%;
+}
+
+.sub__headline-box {
+  margin-top: 7%;
+  height: 10vh;
+  width: 20%;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 45, 114, 0.9);
+  border: 1px solid #39393a;
+
+  cursor: pointer;
+  transition: ease-in-out 1s;
+}
+.sub__headline-box:hover {
+  width: 99%;
+  font-size: 2.5rem;
+  height: 15vh;
+  border-top: 4px solid #39393a;
+  border-bottom: 4px solid #39393a;
+}
+/* Scrolled Contact Button */
+
+.scrolled__contact-button {
+  height: 3em;
+  width: 6.5em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #002d72;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 3px solid #002d72;
+  position: fixed;
+  right: 2.5%;
+  top: 30%;
+  z-index: 10000;
 }
 
 /*  Section 1 */
@@ -177,6 +221,10 @@
   letter-spacing: 1px;
   width: 50%;
   color: white;
+}
+.section__three-title > p > span {
+  font-weight: 700;
+  font-size: 1.5remrem;
 }
 
 /* Section 4 */

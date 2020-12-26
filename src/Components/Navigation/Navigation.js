@@ -8,7 +8,8 @@ function Navigation() {
   return (
     <div className="nav">
       <div className="nav__menu-icon">
-        <MenuIcon fontSize="large" style={{ color: "rgb(0, 45, 114)" }} />
+        {/* <MenuIcon fontSize="large" style={{ color: "rgb(0, 45, 114)" }} /> */}
+        Extreme Transportation
       </div>
       <ul>
         <li>
