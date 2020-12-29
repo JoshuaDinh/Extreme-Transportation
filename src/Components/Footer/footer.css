@@ -9,12 +9,25 @@
 }
 
 .footer__icons {
-  color: rgb(0, 45, 114);
+  color: #39393a;
   width: 33.25%;
   padding: 15px;
   display: flex;
-  border-bottom: 2px solid #002d72;
+  border-bottom: 2px solid #39393a;
   justify-content: space-evenly;
+  cursor: pointer;
+}
+.facebook-icon:hover {
+  color: #002d72;
+}
+.isntagram-icon:hover {
+  color: #002d72;
+}
+.twitter-icon:hover {
+  color: #002d72;
+}
+.linkedin-icon:hover {
+  color: #002d72;
 }
 
 .footer__info {

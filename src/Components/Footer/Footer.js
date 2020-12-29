@@ -11,10 +11,10 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__icons">
-        <FacebookIcon fontSize="large" />
-        <InstagramIcon fontSize="large" />
-        <TwitterIcon fontSize="large" />
-        <LinkedInIcon fontSize="large" />
+        <FacebookIcon className="facebook-icon" fontSize="large" />
+        <InstagramIcon className="instagram-icon" fontSize="large" />
+        <TwitterIcon className="twitter-icon" fontSize="large" />
+        <LinkedInIcon className="linkedin-icon" fontSize="large" />
       </div>
       <div className="footer__info">
         {" "}
