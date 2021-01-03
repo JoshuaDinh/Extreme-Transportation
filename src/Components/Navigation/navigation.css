@@ -15,6 +15,9 @@
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
+.logo {
+  width: 12em;
+}
 
 @keyframes nav {
   from {

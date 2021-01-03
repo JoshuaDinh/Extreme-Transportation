@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import section2 from "./Images/3.jpeg";
 import phone from "./Images/phone.svg";
@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   const [contact, setContact] = useState(false);
+  const [modal, setModal] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -20,9 +21,10 @@ const App = () => {
     //   window.removeEventListener("scroll");
     // };
   }, []);
+
   return (
     <div className="App">
-      <Navigation />{" "}
+      <Navigation setModal={setModal} modal={modal} />{" "}
       <div className="banner__title ">
         <h1 className="animate__animated animate__lightSpeedInRight">
           Auto Transport & Car Shipping
@@ -35,7 +37,7 @@ const App = () => {
       <div className="sub__headline-container">
         <h3>Auto Transport you can trust</h3>
         <p>Transporting your vehicle safely is our top priority</p>
-        <div className="sub__headline-box">
+        <div onClick={() => setModal(true)} className="sub__headline-box">
           <span>
             Get a Quote <FormatQuoteIcon />
           </span>
@@ -45,7 +47,12 @@ const App = () => {
         </div>
       </div>
       {contact && (
-        <button className="scrolled__contact-button">Need help?</button>
+        <button
+          onClick={() => setModal(true)}
+          className="scrolled__contact-button"
+        >
+          Need help?
+        </button>
       )}{" "}
       <section className="section__one">
         <div className="section__one-title">

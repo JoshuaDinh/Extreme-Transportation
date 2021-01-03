@@ -102,7 +102,7 @@
   cursor: pointer;
   color: #002d72;
   font-size: 1.5rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0.7);
   border: 3px solid #002d72;
   position: fixed;
   right: 2.5%;
