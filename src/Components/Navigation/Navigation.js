@@ -4,7 +4,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import PhoneIcon from "@material-ui/icons/Phone";
 import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
 import { ContactModal } from "../Contact/Contact";
-import logo from "../../Images/logo.jpeg";
+import logo from "../../Images/logo.jpg";
 
 const Navigation = ({ setModal, modal }) => {
   return (

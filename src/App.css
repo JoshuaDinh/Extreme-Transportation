@@ -101,7 +101,7 @@
   font-weight: 600;
   cursor: pointer;
   color: #002d72;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   background-color: rgb(255, 255, 255, 0.7);
   border: 3px solid #002d72;
   position: fixed;
@@ -136,9 +136,9 @@
 }
 
 .section__one-title > p {
-  line-height: 42px;
+  line-height: 3.6rem;
   font-size: 24px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   width: 50%;
   color: white;
 }
@@ -171,7 +171,7 @@
   color: #002d72;
 }
 .section__two-title > p {
-  line-height: 42px;
+  line-height: 3.6rem;
   font-size: 24px;
   letter-spacing: 1px;
   width: 100%;
@@ -211,7 +211,7 @@
 }
 
 .section__three-title > p {
-  line-height: 42px;
+  line-height: 3.6rem;
   font-size: 24px;
   letter-spacing: 1px;
   width: 50%;

@@ -16,11 +16,69 @@
   border-bottom: 2px solid #39393a;
   justify-content: space-evenly;
   cursor: pointer;
+  animation: shine 2s infinite;
 }
+.facebook-icon {
+  animation: shine1 2s infinite;
+}
+.instagram-icon {
+  animation: shine2 2s infinite;
+}
+.twitter-icon {
+  animation: shine3 2s infinite;
+}
+
+.linkedin-icon {
+  animation: shine4 2s infinite;
+}
+
+@keyframes shine1 {
+  0% {
+    color: #39393a;
+  }
+  25% {
+    color: #002d72;
+  }
+  100% {
+    color: #39393a;
+  }
+}
+@keyframes shine2 {
+  0% {
+    color: #39393a;
+  }
+  50% {
+    color: #002d72;
+  }
+  100% {
+    color: #39393a;
+  }
+}
+@keyframes shine3 {
+  0% {
+    color: #39393a;
+  }
+  75% {
+    color: #002d72;
+  }
+  100% {
+    color: #39393a;
+  }
+}
+@keyframes shine4 {
+  0% {
+    color: #39393a;
+  }
+
+  100% {
+    color: #002d72;
+  }
+}
+
 .facebook-icon:hover {
   color: #002d72;
 }
-.isntagram-icon:hover {
+.instagram-icon:hover {
   color: #002d72;
 }
 .twitter-icon:hover {

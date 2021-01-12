@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./contact.css";
-import logo from "../../Images/logo.jpeg";
+import logo from "../../Images/logo.jpg";
 
 export const ContactModal = ({ setModal }) => {
   const ref = useRef();
@@ -25,7 +25,7 @@ export const ContactModal = ({ setModal }) => {
         <h2>
           Extreme Transportation 2434 Southport Way Ste F National City, CA
           91950
-        </h2>
+        </h2>{" "}
         <div className="contact__phone">
           <h1 className="contact__phone-desc">Call us today</h1>
           <a href="tel:6192922830" type="tel">
