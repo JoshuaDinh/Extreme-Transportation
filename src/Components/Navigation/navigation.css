@@ -32,13 +32,13 @@
   margin-left: 2%;
 }
 
-.nav > ul {
+.nav-ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-.nav > ul > li {
+.nav-ul > a {
   margin: 0 4em;
   display: flex;
   justify-content: flex-end;
@@ -46,4 +46,43 @@
   font-size: 1rem;
   cursor: pointer;
   color: #002d72;
+}
+
+.mobile-nav-icon {
+  display: none;
+}
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 12%;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  background-color: white;
+}
+.mobile-nav > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #002d72;
+}
+
+@media only screen and (max-width: 850px) {
+  .logo {
+    width: 8em;
+  }
+  .nav-ul a {
+    display: none;
+  }
+
+  .mobile-nav-icon {
+    display: block;
+    margin-right: 5%;
+    cursor: pointer;
+  }
+  .mobile-nav {
+    display: grid;
+  }
 }

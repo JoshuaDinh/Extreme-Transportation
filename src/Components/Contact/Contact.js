@@ -22,10 +22,10 @@ export const ContactModal = ({ setModal }) => {
     <div className="contact__container">
       <div ref={ref} className="contact">
         <img className="logo__contact" src={logo} alt="" />
-        <h2>
+        <h2 className="contact__address">
           Extreme Transportation 2434 Southport Way Ste F National City, CA
           91950
-        </h2>{" "}
+        </h2>
         <div className="contact__phone">
           <h1 className="contact__phone-desc">Call us today</h1>
           <a href="tel:6192922830" type="tel">

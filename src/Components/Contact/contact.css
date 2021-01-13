@@ -5,7 +5,7 @@
   width: 100vw;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .contact {
@@ -31,14 +31,8 @@
   width: 90%;
   border-radius: 25px 25px 0 0;
 }
-h2 {
-  width: 80%;
+.contact__address {
   color: #39393a;
-}
-
-.contact__phone,
-h2 {
-  margin-top: 10%;
 }
 
 .contact__phone > h1 {
@@ -56,4 +50,11 @@ h2 {
 }
 .contact__phone:hover {
   border-bottom: 2px solid #002d72;
+}
+
+@media only screen and (max-width: 750px) {
+  .contact__phone > h1,
+  .contact__address {
+    font-size: 1.3rem;
+  }
 }
