@@ -5,6 +5,7 @@
   width: 100vw;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .contact {
@@ -23,6 +24,7 @@
   border-radius: 25px;
   padding: 25px;
   border: 1px solid #002d72;
+  z-index: 10000000;
 }
 
 .logo__contact {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import phone from "./Images/phone2.svg";
+import truck from "./Images/3.jpeg";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import Navigation from "./Components/Navigation/Navigation";
@@ -39,7 +40,7 @@ const App = () => {
       } else {
         setAnimateSectionTwo(false);
       }
-      if (window.scrollY > 2500) {
+      if (window.scrollY > 2400) {
         setAnimateSectionThree(true);
       } else {
         setAnimateSectionThree(false);
@@ -47,22 +48,21 @@ const App = () => {
     });
   }, []);
 
-  // useEffect(() => {
-  //   function handleScroll() {
-  //     setOffset(window.pageYOffset);
-  //   }
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  useEffect(() => {
+    function handleScroll() {
+      setOffset(window.pageYOffset);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="App">
       <Navigation setModal={setModal} modal={modal} />{" "}
       <div className="banner__title ">
-        <div className="background"></div>
-        <h1 className="animate__animated animate__lightSpeedInRight">
+        <h1 className="animate-animated animate__lightSpeedInRight ">
           Auto Transport & Car Shipping
         </h1>
         <p>
@@ -71,7 +71,6 @@ const App = () => {
         </p>
       </div>
       <div className="sub__headline-container">
-        {/* <h3>Auto Transport you can trust</h3> */}
         <div>
           <span className="highlight-text">A</span>
           <span className="highlight-text">u</span>
@@ -115,27 +114,32 @@ const App = () => {
         >
           Need help?
         </button>
-      )}{" "}
+      )}
       <section className="section__one">
         <div className="section__one-title">
-          <h1 className={animateSectionOne && "animation-header"}>About Us</h1>
-          <p className={animateSectionOne && "animation-header"}>
-            Extreme Transportation is a California based, Vehicle Transportation
-            Company. Servicing Southern California and all throughout the USA
-            since 2001. Our professional staff and management ensures you have
-            the best experience while we deliver the best quality service.
-          </p>
+          <p className={animateSectionOne && "animation-header"}>About Us</p>
         </div>
+        <p
+          className={`section__one-text ${
+            animateSectionOne && "animation-header"
+          }`}
+        >
+          Extreme Transportation is a California based, Vehicle Transportation
+          Company. Servicing Southern California and all throughout the USA
+          since 2001. Our professional staff and management ensures you have the
+          best experience while we deliver the best quality service.
+        </p>
       </section>
       <section className="section__two">
+        <img className="section__two-img" src={truck} />
         <div className="section__two-title">
-          <h1
-            className={`section__two-title-text ${
+          <span
+            className={`section__two-title-header ${
               animateSectionTwo && "animation-header"
             }  `}
           >
             Core Values
-          </h1>
+          </span>
           <div
             className={`section__two-icons-container ${
               animateSectionTwo && "animation-header"
@@ -162,7 +166,11 @@ const App = () => {
               <span className="section__two-icon-text">Service</span>
             </div>
           </div>
-          <p className={` ${animateSectionTwo && "animation-header"}`}>
+          <p
+            className={`section__two-text ${
+              animateSectionTwo && "animation-header"
+            }`}
+          >
             Our values define our company. We will apply these values to our
             everyday decisions, actions, and activities. Our Reputation is of
             vital importance to us. We take ourselves and our mission seriously.
@@ -172,30 +180,104 @@ const App = () => {
       </section>
       <section className="section__three">
         <div className="section__three-title">
-          <h1 className={animateSectionThree && "animation-header"}>
-            {/* Core values */}
-            Commitment
-          </h1>
           <p className={animateSectionThree && "animation-header"}>
-            {" "}
-            “Extreme Transportation is COMMITTED to the business of Vehicle
-            Transporting Services. We are Committed to serving our Customers. We
-            do what we promise in support of our core values: Quality, Loyalty,
-            Integrity, Honor, and Service.
+            Commitment
           </p>
         </div>
+        <p
+          className={`section__three-text ${
+            animateSectionThree && "animation-header"
+          }`}
+        >
+          “Extreme Transportation is COMMITTED to the business of Vehicle
+          Transporting Services. We are Committed to serving our Customers. We
+          do what we promise in support of our core values: Quality, Loyalty,
+          Integrity, Honor, and Service.
+        </p>
       </section>
       <section className="section__four">
         <div className="section__four-title">
-          <h4 className="section__four-questions">
+          <span className="highlight-text"> Q</span>
+          <span className="highlight-text">u</span>
+          <span className="highlight-text">e</span>
+          <span className="highlight-text">s</span>
+          <span className="highlight-text">t</span>
+          <span className="highlight-text">i</span>
+          <span className="highlight-text">o</span>
+          <span className="highlight-text">n</span>
+          <span className="highlight-text">'s</span>
+          <span className="highlight-text">?</span>
+          <span className="highlight-text"> N</span>
+          <span className="highlight-text">e</span>
+          <span className="highlight-text">e</span>
+          <span className="highlight-text">d</span>
+          <span className="highlight-text"> H</span>
+          <span className="highlight-text">e</span>
+          <span className="highlight-text">l</span>
+          <span className="highlight-text">p</span>
+          {/* <h4 className="section__four-questions">
             Got Any Questions? Need help?
-          </h4>
-          <p>We are here to help. Get in touch!</p>
-        </div>
+          </h4> */}
+        </div>{" "}
+        <p>We are here to help. Get in touch!</p>
         <div className="section__four-img">
           <img src={phone} alt="phone" />
         </div>
       </section>
+      <div>
+        {/* <div class="container">
+          <h1> Check Us Out</h1>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img
+                class="gallery-image"
+                src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop"
+                alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer"
+              />
+            </div>
+
+            <div class="gallery-item">
+              <img
+                class="gallery-image"
+                src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop"
+                alt="sunset behind San Francisco city skyline"
+              />
+            </div>
+
+            <div class="gallery-item">
+              <img
+                class="gallery-image"
+                src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop"
+                alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan"
+              />
+            </div>
+
+            <div class="gallery-item">
+              <img
+                class="gallery-image"
+                src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop"
+                alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night"
+              />
+            </div>
+
+            <div class="gallery-item">
+              <img
+                class="gallery-image"
+                src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop"
+                alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA"
+              />
+            </div>
+
+            <div class="gallery-item">
+              <img
+                class="gallery-image"
+                src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop"
+                alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp"
+              />
+            </div>
+          </div> */}
+        {/* </div> */}
+      </div>
       <Footer />
     </div>
   );
