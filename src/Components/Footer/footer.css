@@ -9,12 +9,12 @@
 }
 
 .footer__icons {
-  color: #39393a;
+  color: #000000;
 
   width: 33.25%;
   padding: 15px;
   display: flex;
-  border-bottom: 2px solid #39393a;
+  border-bottom: 2px solid #000000;
   justify-content: space-evenly;
   cursor: pointer;
   animation: shine 2s infinite;
@@ -35,40 +35,40 @@
 
 @keyframes shine1 {
   0% {
-    color: #39393a;
+    color: #000000;
   }
   25% {
     color: #002d72;
   }
   100% {
-    color: #39393a;
+    color: #000000;
   }
 }
 @keyframes shine2 {
   0% {
-    color: #39393a;
+    color: #000000;
   }
   50% {
     color: #002d72;
   }
   100% {
-    color: #39393a;
+    color: #000000;
   }
 }
 @keyframes shine3 {
   0% {
-    color: #39393a;
+    color: #000000;
   }
   75% {
     color: #002d72;
   }
   100% {
-    color: #39393a;
+    color: #000000;
   }
 }
 @keyframes shine4 {
   0% {
-    color: #39393a;
+    color: #000000;
   }
 
   100% {
@@ -117,7 +117,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  color: #39393a;
+  color: #000000;
 }
 .footer__personal > ul,
 .footer__contact > ul {
