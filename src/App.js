@@ -69,7 +69,7 @@ const App = () => {
           <Route path="/gallery">
             <Gallery />
           </Route>
-          <Route path="/">
+          <Route path="/extremetransportation">
             {" "}
             <div className="banner__title ">
               <h1 className="animate-animated animate__lightSpeedInRight ">
