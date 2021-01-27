@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./contact.css";
 import logo from "../../Images/logo.jpg";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
+import application from "../../Images/application.pdf";
 
 export const ContactModal = ({ setModal }) => {
   const ref = useRef();
@@ -31,7 +33,11 @@ export const ContactModal = ({ setModal }) => {
           <a href="tel:6192922830" type="tel">
             <h1>(619)292-2830</h1>
           </a>
-        </div>
+        </div>{" "}
+        <a className="application" href={application} download>
+          <PictureAsPdfIcon />
+          Application
+        </a>
       </div>
     </div>
   );

@@ -15,6 +15,14 @@
   animation-delay: 0.5s;
   animation-fill-mode: forwards; */
 }
+
+.application-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .logo {
   width: 12em;
 }

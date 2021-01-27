@@ -13,6 +13,8 @@ import BuildIcon from "@material-ui/icons/Build";
 import HowToRegIcon from "@material-ui/icons/HowToReg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Gallery } from "./Components/Gallery/Gallery";
+import application from "./Images/application.pdf";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 
 const App = () => {
   const [contact, setContact] = useState(false);
@@ -233,7 +235,11 @@ const App = () => {
                 <span className="highlight-text">l</span>
                 <span className="highlight-text">p</span>
               </div>
-              <p>We are here to help. Get in touch!</p>
+              <p>We are here to help. Get in touch!</p>{" "}
+              <a className="application-app" href={application} download>
+                <PictureAsPdfIcon />
+                Application
+              </a>
               <div className="section__four-img">
                 <img src={phone} alt="phone" />
               </div>

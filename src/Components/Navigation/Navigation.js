@@ -7,6 +7,8 @@ import { ContactModal } from "../Contact/Contact";
 import logo from "../../Images/logo.jpg";
 import HomeIcon from "@material-ui/icons/Home";
 import { Link } from "react-router-dom";
+import application from "../../Images/application.pdf";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 
 const Navigation = ({ setModal, modal }) => {
   const [nav, setNav] = useState(false);
@@ -22,10 +24,15 @@ const Navigation = ({ setModal, modal }) => {
           <HomeIcon />
           Home
         </Link>
+
         <Link to="/gallery">
           <PhotoLibraryIcon />
           Gallery
         </Link>
+        <a className="application-nav" href={application} download>
+          <PictureAsPdfIcon />
+          Application
+        </a>
         <a href="tel:123-456-7890">
           <PhoneIcon />
           619-292-2830
@@ -45,6 +52,9 @@ const Navigation = ({ setModal, modal }) => {
             <PhotoLibraryIcon />
             Gallery
           </Link>
+          <a href={application} download>
+            application
+          </a>
           <a className="phone" href="tel:123-456-7890">
             <PhoneIcon />
             619-292-2830
