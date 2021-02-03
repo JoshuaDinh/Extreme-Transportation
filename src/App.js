@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import phone from "./Images/phone2.svg";
 import truck from "./Images/3.jpeg";
@@ -11,7 +11,7 @@ import RoomServiceIcon from "@material-ui/icons/RoomService";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 import BuildIcon from "@material-ui/icons/Build";
 import HowToRegIcon from "@material-ui/icons/HowToReg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Gallery } from "./Components/Gallery/Gallery";
 import application from "./Images/application.pdf";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
@@ -19,7 +19,7 @@ import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 const App = () => {
   const [contact, setContact] = useState(false);
   const [modal, setModal] = useState(false);
-  const [offset, setOffset] = useState(0);
+  const [, setOffset] = useState(0);
   const [animateSectionOne, setAnimateSectionOne] = useState(false);
   const [animateSectionTwo, setAnimateSectionTwo] = useState(false);
   const [animateSectionThree, setAnimateSectionThree] = useState(false);
@@ -140,13 +140,13 @@ const App = () => {
               >
                 Extreme Transportation is a California based, Vehicle
                 Transportation Company. Servicing Southern California and all
-                throughout the USA since 2001. Our professional staff and
+                throughout the USA since 1196. Our professional staff and
                 management ensures you have the best experience while we deliver
                 the best quality service.
               </p>
             </section>
             <section className="section__two">
-              <img className="section__two-img" src={truck} />
+              <img className="section__two-img" alt="" src={truck} />
               <div className="section__two-title">
                 <span
                   className={`section__two-title-header ${
@@ -224,7 +224,7 @@ const App = () => {
                 <span className="highlight-text">i</span>
                 <span className="highlight-text">o</span>
                 <span className="highlight-text">n</span>
-                <span className="highlight-text">'s</span>
+                <span className="highlight-text">s</span>
                 <span className="highlight-text">?</span>
                 <span className="highlight-text"> N</span>
                 <span className="highlight-text">e</span>

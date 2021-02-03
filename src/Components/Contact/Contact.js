@@ -19,7 +19,7 @@ export const ContactModal = ({ setModal }) => {
     return () => {
       document.body.removeEventListener("click", onBodyClick);
     };
-  }, []);
+  }, [setModal]);
   return (
     <div className="contact__container">
       <div ref={ref} className="contact">

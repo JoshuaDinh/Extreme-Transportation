@@ -20,48 +20,48 @@ export const Gallery = () => {
       <div class="container">
         <div class="gallery">
           <div class="gallery-item">
-            <img class="gallery-image" src={photo1} />
+            <img alt="" class="gallery-image" src={photo1} />
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src={photo2} />
+            <img alt="" class="gallery-image" src={photo2} />
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src={photo3} />
+            <img alt="" class="gallery-image" src={photo3} />
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src={photo4} />
+            <img alt="" class="gallery-image" src={photo4} />
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src={photo5} />
+            <img alt="" class="gallery-image" src={photo5} />
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src={photo6} />
+            <img alt="" class="gallery-image" src={photo6} />
           </div>
           <div class="gallery-item">
-            <img class="gallery-image" src={photo10} />
+            <img alt="" class="gallery-image" src={photo10} />
           </div>
           <div class="gallery-item">
-            <img class="gallery-image" src={photo8} />
+            <img alt="" class="gallery-image" src={photo8} />
           </div>
           <div class="gallery-item">
-            <img class="gallery-image" src={photo9} />
+            <img alt="" class="gallery-image" src={photo9} />
           </div>
           <div class="gallery-item">
-            <img class="gallery-image" src={photo7} />
+            <img alt="" class="gallery-image" src={photo7} />
           </div>
           <div class="gallery-item">
-            <img class="gallery-image" src={photo11} />
+            <img alt="" class="gallery-image" src={photo11} />
           </div>
           <div class="gallery-item">
-            <img class="gallery-image" src={photo12} />
+            <img alt="" class="gallery-image" src={photo12} />
           </div>
           <div class="gallery-item">
-            <img class="gallery-image" src={photo13} />
+            <img alt="" class="gallery-image" src={photo13} />
           </div>
         </div>
       </div>

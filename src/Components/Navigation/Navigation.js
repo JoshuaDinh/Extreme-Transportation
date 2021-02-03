@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import navigation from "./navigation.css";
+import "./navigation.css";
 import MenuIcon from "@material-ui/icons/Menu";
 import PhoneIcon from "@material-ui/icons/Phone";
 import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
@@ -20,12 +20,12 @@ const Navigation = ({ setModal, modal }) => {
         <img className="logo" src={logo} alt="" />
       </div>
       <ul className="nav-ul">
-        <Link to="/">
+        <Link className="link-tag" to="/">
           <HomeIcon />
           Home
         </Link>
 
-        <Link to="/gallery">
+        <Link className="link-tag" to="/gallery">
           <PhotoLibraryIcon />
           Gallery
         </Link>
@@ -44,11 +44,11 @@ const Navigation = ({ setModal, modal }) => {
       </div>
       {nav && (
         <ul className="mobile-nav">
-          <Link to="/">
+          <Link className="link-tag" to="/">
             <HomeIcon />
             Home
           </Link>
-          <Link to="/gallery">
+          <Link className="link-tag" to="/gallery">
             <PhotoLibraryIcon />
             Gallery
           </Link>

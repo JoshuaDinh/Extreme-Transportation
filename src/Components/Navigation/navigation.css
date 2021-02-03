@@ -16,6 +16,10 @@
   animation-fill-mode: forwards; */
 }
 
+.link-tag {
+  text-decoration: none;
+}
+
 .application-nav {
   display: flex;
   align-items: center;
