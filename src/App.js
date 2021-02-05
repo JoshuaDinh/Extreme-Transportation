@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Gallery } from "./Components/Gallery/Gallery";
 import application from "./Images/application.pdf";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
+import { MissionStatement } from "./Components/MissionStatement/MissionStatement";
 
 const App = () => {
   const [contact, setContact] = useState(false);
@@ -127,6 +128,7 @@ const App = () => {
                 Need help?
               </button>
             )}
+            <MissionStatement />
             <section className="section__one">
               <div className="section__one-title">
                 <p className={animateSectionOne && "animation-header"}>

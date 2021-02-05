@@ -17,7 +17,7 @@
 }
 
 .link-tag {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .application-nav {

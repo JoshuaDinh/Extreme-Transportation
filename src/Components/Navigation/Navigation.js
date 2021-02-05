@@ -55,7 +55,7 @@ const Navigation = ({ setModal, modal }) => {
           <a href={application} download>
             application
           </a>
-          <a className="phone" href="tel:123-456-7890">
+          <a className="link-tag" href="tel:123-456-7890">
             <PhoneIcon />
             619-292-2830
           </a>
