@@ -18,6 +18,8 @@
 
 .link-tag {
   text-decoration: none !important;
+  display: flex;
+  align-items: center;
 }
 
 .application-nav {

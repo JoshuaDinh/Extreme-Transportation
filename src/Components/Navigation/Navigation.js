@@ -20,11 +20,10 @@ const Navigation = ({ setModal, modal }) => {
         <img className="logo" src={logo} alt="" />
       </div>
       <ul className="nav-ul">
-        <Link className="link-tag" to="/">
+        <Link className="link-tag" to="/extremetransportation">
           <HomeIcon />
           Home
         </Link>
-
         <Link className="link-tag" to="/gallery">
           <PhotoLibraryIcon />
           Gallery
@@ -44,7 +43,7 @@ const Navigation = ({ setModal, modal }) => {
       </div>
       {nav && (
         <ul className="mobile-nav">
-          <Link className="link-tag" to="/">
+          <Link className="link-tag" to="/extremetransportation">
             <HomeIcon />
             Home
           </Link>

@@ -217,6 +217,7 @@ const App = () => {
               </p>
             </section>
             <section className="section__four">
+              {" "}
               <div className="section__four-title">
                 <span className="highlight-text"> Q</span>
                 <span className="highlight-text">u</span>
