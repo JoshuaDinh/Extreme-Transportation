@@ -142,7 +142,7 @@ const App = () => {
               >
                 Extreme Transportation is a California based, Vehicle
                 Transportation Company. Servicing Southern California and all
-                throughout the USA since 1196. Our professional staff and
+                throughout the USA since 1996. Our professional staff and
                 management ensures you have the best experience while we deliver
                 the best quality service.
               </p>
