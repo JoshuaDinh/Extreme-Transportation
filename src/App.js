@@ -218,27 +218,30 @@ const App = () => {
             </section>
             <section className="section__four">
               {" "}
-              <div className="section__four-title">
-                <span className="highlight-text"> Q</span>
-                <span className="highlight-text">u</span>
-                <span className="highlight-text">e</span>
-                <span className="highlight-text">s</span>
-                <span className="highlight-text">t</span>
-                <span className="highlight-text">i</span>
-                <span className="highlight-text">o</span>
-                <span className="highlight-text">n</span>
-                <span className="highlight-text">s</span>
-                <span className="highlight-text">?</span>
-                <span className="highlight-text"> N</span>
-                <span className="highlight-text">e</span>
-                <span className="highlight-text">e</span>
-                <span className="highlight-text">d</span>
-                <span className="highlight-text"> H</span>
-                <span className="highlight-text">e</span>
-                <span className="highlight-text">l</span>
-                <span className="highlight-text">p</span>
+              <div className="section-four-content">
+                {" "}
+                <div className="section__four-title">
+                  <span className="highlight-text"> Q</span>
+                  <span className="highlight-text">u</span>
+                  <span className="highlight-text">e</span>
+                  <span className="highlight-text">s</span>
+                  <span className="highlight-text">t</span>
+                  <span className="highlight-text">i</span>
+                  <span className="highlight-text">o</span>
+                  <span className="highlight-text">n</span>
+                  <span className="highlight-text">s</span>
+                  <span className="highlight-text">?</span>
+                  <span className="highlight-text"> N</span>
+                  <span className="highlight-text">e</span>
+                  <span className="highlight-text">e</span>
+                  <span className="highlight-text">d</span>
+                  <span className="highlight-text"> H</span>
+                  <span className="highlight-text">e</span>
+                  <span className="highlight-text">l</span>
+                  <span className="highlight-text">p</span>
+                </div>
+                <p>We are here to help. Get in touch!</p>{" "}
               </div>
-              <p>We are here to help. Get in touch!</p>{" "}
               <a className="application-app" href={application} download>
                 <PictureAsPdfIcon />
                 Application
