@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/extremetransportation/static/css/main.59f0aa84.chunk.css",
-    "main.js": "/extremetransportation/static/js/main.60b7f831.chunk.js",
-    "main.js.map": "/extremetransportation/static/js/main.60b7f831.chunk.js.map",
+    "main.css": "/extremetransportation/static/css/main.c3b92cb7.chunk.css",
+    "main.js": "/extremetransportation/static/js/main.bd868560.chunk.js",
+    "main.js.map": "/extremetransportation/static/js/main.bd868560.chunk.js.map",
     "runtime-main.js": "/extremetransportation/static/js/runtime-main.55355be9.js",
     "runtime-main.js.map": "/extremetransportation/static/js/runtime-main.55355be9.js.map",
     "static/js/2.0a0e2042.chunk.js": "/extremetransportation/static/js/2.0a0e2042.chunk.js",
     "static/js/2.0a0e2042.chunk.js.map": "/extremetransportation/static/js/2.0a0e2042.chunk.js.map",
     "index.html": "/extremetransportation/index.html",
-    "static/css/main.59f0aa84.chunk.css.map": "/extremetransportation/static/css/main.59f0aa84.chunk.css.map",
+    "static/css/main.c3b92cb7.chunk.css.map": "/extremetransportation/static/css/main.c3b92cb7.chunk.css.map",
     "static/js/2.0a0e2042.chunk.js.LICENSE.txt": "/extremetransportation/static/js/2.0a0e2042.chunk.js.LICENSE.txt",
     "static/media/1.c8f4f229.jpg": "/extremetransportation/static/media/1.c8f4f229.jpg",
     "static/media/10.d527b40d.jpg": "/extremetransportation/static/media/10.d527b40d.jpg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.55355be9.js",
     "static/js/2.0a0e2042.chunk.js",
-    "static/css/main.59f0aa84.chunk.css",
-    "static/js/main.60b7f831.chunk.js"
+    "static/css/main.c3b92cb7.chunk.css",
+    "static/js/main.bd868560.chunk.js"
   ]
 }

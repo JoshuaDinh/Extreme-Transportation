@@ -606,6 +606,7 @@ body {
 
 .section__four-title {
   width: 100%;
+  text-align: center;
 }
 .section__four-img {
   display: flex;
