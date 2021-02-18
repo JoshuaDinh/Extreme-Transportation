@@ -21,17 +21,15 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-
   background-attachment: fixed;
   background-position: center;
-  background-attachment: scroll;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("./Images/banner.jpg") center no-repeat;
+    url("./Images/banner.jpg");
 }
 
 .banner__title > h1 {
@@ -626,7 +624,7 @@ body {
 }
 
 .section__four-img > img {
-  width: 350px;
+  width: 40%;
 }
 
 /* media quieries */
@@ -726,6 +724,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
   .section__two-title > h1 {
     font-size: 52px;
   }
+  .section__one-title > p {
+    font-size: 52px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -751,7 +752,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     grid-template-columns: repeat(1, 1fr);
   }
   .section__two-text {
-    width: 95%;
+    width: 100%;
     height: 100%;
   }
   .section__two-icon-container {
@@ -765,12 +766,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 @media only screen and (max-width: 500px) {
   .section__four-img > img {
-    width: 250px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 430px) {
   .section__four-img > img {
-    width: 180px;
+    width: 100%;
   }
 
   .section__one {

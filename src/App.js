@@ -72,11 +72,11 @@ const App = () => {
           <Route path="/gallery">
             <Gallery />
           </Route>
-          <Route path="/extremetransportation">
+          <Route path="/">
             {" "}
             <div className="banner__title ">
               <h1 className="animate-animated animate__lightSpeedInRight ">
-                Auto Transport & Car Shipping
+                Auto Transport
               </h1>
               <p>
                 Get Car Shipping Quote • Best Rated Vehicle Transport Company •
@@ -111,14 +111,14 @@ const App = () => {
                 <span className="highlight-text">t</span>
               </div>
               <p>Transporting your vehicle safely is our top priority</p>
-              <div onClick={() => setModal(true)} className="sub__headline-box">
+              {/* <div onClick={() => setModal(true)} className="sub__headline-box">
                 <span>
                   Get a Quote <FormatQuoteIcon />
                 </span>
                 <span>
                   <LocalOfferIcon fontSize="large" />
                 </span>
-              </div>
+              </div> */}
             </div>
             {contact && (
               <button
