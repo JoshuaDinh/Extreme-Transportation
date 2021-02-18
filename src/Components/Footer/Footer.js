@@ -40,7 +40,7 @@ const Footer = () => {
             <li> *US DOT Number - 1415704</li>
             <li> *Motor Carrier Number - 535840B</li>
             <li> *48 State Authority</li>
-            <li> *License Insured Bonded</li>
+            <li> *License - Insured - Bonded</li>
           </ul>
         </div>
       </div>

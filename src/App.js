@@ -76,10 +76,10 @@ const App = () => {
             {" "}
             <div className="banner__title ">
               <h1 className="animate-animated animate__lightSpeedInRight ">
-                Auto Transport
+                Auto Transportation
               </h1>
               <p>
-                Auto Transport • Best Rated Vehicle Transport Company •
+                Auto Transportion • Best Rated Vehicle Transportation Company •
                 Nationwide
               </p>
             </div>
