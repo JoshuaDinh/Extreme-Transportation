@@ -447,9 +447,9 @@ body {
   width: 100%;
   padding: 0 5%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.3rem;
-  line-height: 4rem;
+  line-height: 3.2rem;
   color: black;
   transform: translateY(-500px);
   opacity: 0;

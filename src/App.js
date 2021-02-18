@@ -79,7 +79,7 @@ const App = () => {
                 Auto Transport
               </h1>
               <p>
-                Get Car Shipping Quote • Best Rated Vehicle Transport Company •
+                Auto Transport • Best Rated Vehicle Transport Company •
                 Nationwide
               </p>
             </div>
