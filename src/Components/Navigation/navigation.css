@@ -1,6 +1,6 @@
 .nav {
   height: 90px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   z-index: 100;

@@ -75,9 +75,11 @@ const App = () => {
           <Route path="/">
             {" "}
             <div className="banner__title ">
-              <h1 className="animate-animated animate__lightSpeedInRight ">
-                Auto Transportation
-              </h1>
+              <div className="animate-animated animate__lightSpeedInRight">
+                <p className="banner__title-auto-transport">
+                  Auto Transportation
+                </p>
+              </div>
               <p>
                 Auto Transportion • Best Rated Vehicle Transportation Company •
                 Nationwide
@@ -98,6 +100,11 @@ const App = () => {
                 <span className="highlight-text">o</span>
                 <span className="highlight-text">r</span>
                 <span className="highlight-text">t</span>
+                <span className="highlight-text">a</span>
+                <span className="highlight-text">t</span>
+                <span className="highlight-text">i</span>
+                <span className="highlight-text">o</span>
+                <span className="highlight-text">n</span>
                 <span className="highlight-text"> Y</span>
                 <span className="highlight-text">o</span>
                 <span className="highlight-text">u</span>
