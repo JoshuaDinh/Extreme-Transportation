@@ -16,6 +16,7 @@ import { Gallery } from "./Components/Gallery/Gallery";
 import application from "./Images/application.pdf";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import { MissionStatement } from "./Components/MissionStatement/MissionStatement";
+import Banner from "./Images/banner.jpg";
 
 const App = () => {
   const [contact, setContact] = useState(false);
@@ -75,6 +76,9 @@ const App = () => {
           <Route path="/">
             {" "}
             <div className="banner__title ">
+              <div className="img-overlay"></div>
+              <img className="banner__title-image" src={Banner} />
+              {/* <img className="banner__title-image" src={Banner} /> */}
               <div className="animate-animated animate__lightSpeedInRight">
                 <p className="banner__title-auto-transport">
                   Auto Transportation

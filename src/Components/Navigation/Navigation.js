@@ -52,7 +52,8 @@ const Navigation = ({ setModal, modal }) => {
             Gallery
           </Link>
           <a href={application} download>
-            application
+            <PictureAsPdfIcon />
+            Application
           </a>
           <a className="link-tag" href="tel:123-456-7890">
             <PhoneIcon />
