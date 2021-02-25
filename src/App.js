@@ -76,9 +76,7 @@ const App = () => {
           <Route path="/">
             {" "}
             <div className="banner__title ">
-              <div className="img-overlay"></div>
-              <img className="banner__title-image" src={Banner} />
-              {/* <img className="banner__title-image" src={Banner} /> */}
+              <div className="bkg"></div>
               <div className="animate-animated animate__lightSpeedInRight">
                 <p className="banner__title-auto-transport">
                   Auto Transportation
