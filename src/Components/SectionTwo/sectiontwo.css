@@ -1,0 +1,29 @@
+.section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40%;
+  max-height: 100%;
+}
+
+.section-two-header {
+  color: #c49735;
+  font-size: 3.4rem;
+  text-align: center;
+  margin: 3% 0;
+}
+
+.section-two-text {
+  color: rgb(49, 89, 177);
+  font-size: 1.3rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-two-text {
+    width: 100%;
+  }
+  .section-two {
+    justify-content: center;
+  }
+}

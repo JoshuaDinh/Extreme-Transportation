@@ -1,0 +1,29 @@
+.section-four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40%;
+  max-height: 100%;
+}
+
+.section-four-header {
+  color: #c49735;
+  font-size: 3.4rem;
+  text-align: center;
+  margin: 3% 0;
+}
+
+.section-four-text {
+  color: rgb(49, 89, 177);
+  width: 50%;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-four-text {
+    width: 100%;
+  }
+  .section-four {
+    justify-content: center;
+  }
+}
