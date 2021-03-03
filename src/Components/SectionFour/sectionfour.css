@@ -15,8 +15,9 @@
 
 .section-four-text {
   color: rgb(49, 89, 177);
-  width: 50%;
+  width: 90%;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {

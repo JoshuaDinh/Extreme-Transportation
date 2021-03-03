@@ -16,7 +16,8 @@
 .section-two-text {
   color: rgb(49, 89, 177);
   font-size: 1.3rem;
-  width: 50%;
+  width: 90%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
