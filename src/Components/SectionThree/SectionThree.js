@@ -1,6 +1,6 @@
 import React from "react";
 import "./sectionthree.css";
-import truck from "../../gallery/1.jpg";
+import truck from "../../Images/corevalues.jpeg";
 
 export const SectionThree = () => {
   return (

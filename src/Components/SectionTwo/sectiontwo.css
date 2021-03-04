@@ -26,5 +26,6 @@
   }
   .section-two {
     justify-content: center;
+    margin: 10% 0;
   }
 }

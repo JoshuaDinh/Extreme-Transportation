@@ -27,7 +27,7 @@ const Navigation = ({ setModal, modal }) => {
         </a>
         <a href="tel:123-456-7890">619-292-2830</a>
       </ul>
-      {modal && <ContactModal setModal={setModal} />}
+      {/* {modal && <ContactModal setModal={setModal} />} */}
       <div className="mobile-nav-icon">
         <MenuIcon onClick={() => setNav(!nav)} />
       </div>

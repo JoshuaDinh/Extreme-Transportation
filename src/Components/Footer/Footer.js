@@ -10,7 +10,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p className="footer-contact-button">Contact</p>
       <div className="footer-content">
         <div className="footer-contact">
           <h5 className="footer-contact-header">Contact</h5>

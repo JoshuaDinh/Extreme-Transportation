@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-
 import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Gallery } from "./Components/Gallery/Gallery";
 import application from "./Images/application.pdf";
@@ -11,14 +9,20 @@ import { SectionOne } from "./Components/SectionOne/SectionOne";
 import { SectionTwo } from "./Components/SectionTwo/SectionTwo";
 import { SectionThree } from "./Components/SectionThree/SectionThree";
 import { SectionFour } from "./Components/SectionFour/SectionFour";
+import { Contact } from "./Components/Contact/Contact";
 
 const App = () => {
   const [contact, setContact] = useState(false);
   const [modal, setModal] = useState(false);
-  const [, setOffset] = useState(0);
-  const [animateSectionOne, setAnimateSectionOne] = useState(false);
-  const [animateSectionTwo, setAnimateSectionTwo] = useState(false);
-  const [animateSectionThree, setAnimateSectionThree] = useState(false);
+  const [stickyContact, setStickyContact] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        setStickyContact(true);
+      } else setStickyContact(false);
+    });
+  }, []);
 
   return (
     <div className="App">
@@ -29,7 +33,15 @@ const App = () => {
             <Gallery />
           </Route>
           <Route path="/">
-            {" "}
+            {modal && <Contact setModal={setModal} />}
+            {stickyContact && (
+              <p
+                onClick={() => setModal(true)}
+                className="footer-contact-button"
+              >
+                Contact
+              </p>
+            )}
             <div className="banner__title ">
               <div className="banner__title-container">
                 <p className="banner__title-auto-transport">
@@ -48,7 +60,7 @@ const App = () => {
             <SectionTwo />
             <SectionThree />
             <SectionFour />
-            <Footer />
+            <Footer setModal={setModal} />
           </Route>
         </Switch>
       </Router>

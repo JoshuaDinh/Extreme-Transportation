@@ -4,7 +4,7 @@ import logo from "../../Images/logo.jpg";
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import application from "../../Images/application.pdf";
 
-export const ContactModal = ({ setModal }) => {
+export const Contact = ({ setModal }) => {
   const ref = useRef();
 
   useEffect(() => {
