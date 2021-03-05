@@ -44,7 +44,7 @@ const App = () => {
             )}
             <div className="banner__title ">
               <div className="banner__title-container">
-                <p className="banner__title-auto-transport">
+                <p className="banner__title-auto-transport animate__animated animate__lightSpeedInRight">
                   Auto Transportation
                 </p>
                 <p className="banner__title-text">

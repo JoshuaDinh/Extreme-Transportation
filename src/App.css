@@ -1,7 +1,35 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "MyriadPro";
+  font-family: "Myriad Pro";
+}
+@font-face {
+  font-family: "Bauhaus 93";
+  src: url("//db.onlinewebfonts.com/t/89d11a443c316da80dcb8f5e1f63c86e.eot");
+  src: url("//db.onlinewebfonts.com/t/89d11a443c316da80dcb8f5e1f63c86e.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/89d11a443c316da80dcb8f5e1f63c86e.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/89d11a443c316da80dcb8f5e1f63c86e.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/89d11a443c316da80dcb8f5e1f63c86e.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/89d11a443c316da80dcb8f5e1f63c86e.svg#Bauhaus 93")
+      format("svg");
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("//db.onlinewebfonts.com/t/f3b65bc5f78ed2b3748f81383222dd43.eot");
+  src: url("//db.onlinewebfonts.com/t/f3b65bc5f78ed2b3748f81383222dd43.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/f3b65bc5f78ed2b3748f81383222dd43.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/f3b65bc5f78ed2b3748f81383222dd43.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/f3b65bc5f78ed2b3748f81383222dd43.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/f3b65bc5f78ed2b3748f81383222dd43.svg#Myriad Pro")
+      format("svg");
 }
 
 body {
@@ -38,7 +66,7 @@ body {
     background-repeat: no-repeat;
   }
   .banner__title-auto-transport {
-    font-size: 2.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -103,6 +131,7 @@ body {
 .sub__headline-container > p {
   color: #c49735;
   font-size: 3.2rem;
+  text-align: center;
 }
 
 .sub__headline-box {
