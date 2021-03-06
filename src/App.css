@@ -40,7 +40,7 @@ body {
 .App {
   height: 100vh;
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 .banner__title {
@@ -50,24 +50,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("./Images/banner.jpg");
+  background-image: url("./Images/banner.jpg");
+  /* opacity: 0.9; */
   height: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 90vh;
   width: 100%;
-}
-
-@media only screen and (max-width: 800px) {
-  .banner__title {
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .banner__title-auto-transport {
-    font-size: 1rem;
-  }
 }
 
 .banner__title-container {
@@ -85,6 +75,7 @@ body {
 
 .banner__title-auto-transport {
   font-size: 4.2rem;
+  letter-spacing: -3px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,18 +94,32 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 800px) {
+  .banner__title {
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .banner__title-auto-transport {
+    font-size: 3rem;
+  }
+}
+
 /* Contact modal */
 
 .footer-contact-button {
   position: fixed;
   z-index: 100;
-  background: red;
+  background: rgb(0, 0, 0, 0.55);
   color: white;
   padding: 15px;
   min-width: 8%;
   text-align: center;
   font-weight: bolder;
   cursor: pointer;
+}
+.footer-contact-button:hover {
+  background: rgb(0, 53, 168, 0.6);
 }
 
 /* Subheadline */
