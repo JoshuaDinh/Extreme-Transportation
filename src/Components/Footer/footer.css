@@ -117,6 +117,15 @@
 @media only screen and (max-width: 700px) {
   .footer-personal {
     line-height: 0.9rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__icons {
+    justify-content: space-evenly;
   }
 }
 @media only screen and (max-width: 430px) {
