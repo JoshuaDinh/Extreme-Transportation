@@ -115,19 +115,28 @@
   }
 }
 @media only screen and (max-width: 700px) {
+  .footer {
+    height: 70%;
+  }
   .footer-personal {
     line-height: 0.9rem;
     text-align: center;
     justify-content: center;
+    margin: 0;
   }
   .footer-content {
     flex-direction: column;
     text-align: center;
   }
   .footer__icons {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
+.footer-contact {
+  margin: 7% 0;
+  font-size: 1rem;
+}
+
 @media only screen and (max-width: 430px) {
   .footer-personal {
     line-height: 0.85rem;
